@@ -11,6 +11,7 @@ body
   max-height: 550px
   background-image: url("../img-2/put-your-image-here.jpg")
   position: relative
+  background-size: cover
   z-index: 2
   &::before
     position: absolute
@@ -71,6 +72,7 @@ body
   height: 100%
   background-image: url(../img-2/put-your-image-here23.jpg)
   position: relative
+  background-size: cover
   color: $me-white
   z-index: 2
   &::before
@@ -117,7 +119,7 @@ body
   &::after
     content: ''
     right: 10px
-    background-image: url(../img-2/right154.png)
+    background-image: url("../img-2/right154.png")
 
 .meet-our-block
   display: flex
@@ -130,10 +132,11 @@ body
     width: 100%
 
 .quote
-  height: 100%
+  height: 500px
   text-align: center
   background-image: url("../img-2/put-your-image-here-22.jpg")
   position: relative
+  background-size: cover
   z-index: 2
   &::before
     position: absolute
@@ -148,6 +151,128 @@ body
   &-conteiner
     width: 770px
     height: 100%
+
+.disp-fl
+  display: flex
+
+  align-items: center
+  align-content: center
+.give-us
+  justify-content: space-between
+  width: 940px
+  align-items: flex-start
+  margin-top: 0
+
+.text-area-inp
+  resize: none
+  padding-bottom: 150px
+  overflow: hidden
+
+
+.fl-fl-no-w
+  flex-wrap: nowrap
+.input-width
+    width: 100%
+    height: 45px
+    margin: 10px 0
+
+.list-form
+  max-width: 460px
+  height: auto
+.list-clients
+  width: 50%
+  margin-left: 100px
+
+
+.our-client
+  justify-content: space-around
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  align-content: center
+  margin-left: -40px
+
+  li
+    margin: 25px
+    justify-content: center
+    align-items: center
+
+.main-footer
+  background-image: url("../img-2/put-your-image-here33.jpg")
+  position: relative
+  background-size: cover
+  z-index: 2
+  color: $me-white
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: $my-gradient
+    z-index: 1
+    opacity: 0.7
+
+.section-footer-aling
+  display: flex
+  justify-content: space-between
+  div
+    margin: 30px
+
+.our-st-map
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    z-index: 4
+    left: -10px
+    background-image: url("../img-2/phone351.png")
+
+.style-footer-p
+  font-family: Roboto sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 26px
+  letter-spacing: 0.35px
+.surch-us
+  display: flex
+  li
+    display: inline-block
+    width: 15px
+    justify-content: flex-start
+    align-items: center
+    align-content: center
+    margin: 5px
+    padding: 10px
+    border: solid 1px $me-white
+    border-radius: 50%
+    a
+
+      align-items: center
+      justify-content: center
+
+.jc-b
+  justify-content: space-between
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
