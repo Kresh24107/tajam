@@ -1,17 +1,269 @@
-$font-stack:    Helvetica, sans-serif
-$primary-color: #333
-
 body
   margin: 0
-  font: 100% $font-stack
-  color: $primary-color
 
-h1
-  color: #ffffff
-  font-size: 32px
-  font: Playfair Display - Black, sans
+.main-logo
+  color: #00e0d0
+  font-family: Roboto - Thin sans-serif
+  font-size: 30px
+  margin-left: 10px
 
 .wraper
   width: 100%
   min-height: 100vh
-  color: red
+
+.main-nav-li
+  margin-left: 30px
+  color: #ffffff
+  font-family: Roboto - Black sans-serif
+  &:hover
+    color: #00e0d0
+
+.font-no-black
+  font-family: Playfair Display - blod sans-serif
+
+.align-center
+  align-content: center
+  justify-content: center
+  align-items: center
+
+.block
+  width: 100%
+  height: 550px
+  display: flex
+  flex-flow: column
+
+
+.flexible-in-a-row
+  display: flex
+  wrap-option: no wrap
+  align-items: center
+
+.text-uppercase
+  text-transform: uppercase
+
+.conteiner
+  width: 940px
+  height: 100%
+  margin: 0 auto
+  font-family: Roboto sans sans-serif
+  .greeting
+    width: 770px
+    margin: 160px auto
+    text-align: center
+    color: white
+    margin-bottom: 50px
+    .hello
+      padding-bottom: 20px
+      border-bottom: 1px solid #00e0d0
+      margin-bottom: 30px
+      font-size: 32px
+
+.marg-center
+  margin: auto auto
+  text-align: center
+.bottom
+  margin-bottom: 70px
+
+.main-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 50px
+  padding-top: 15px
+
+.button
+  color: #00e0d0
+  border: 1px solid #00e0d0
+  text-transform: uppercase
+  margin: 30px auto
+  min-width: 120px
+  text-align: center
+  justify-content: center
+  background-color: transparent
+  padding: 20px
+  font-family: Hammersmith One sans serif
+  font-size: 16px
+  &-reset
+    margin: 0
+
+.class1
+  position: relative
+  margin: 0 auto
+
+.fon-img
+  position: absolute
+  width: 100%
+  height: 100%
+  padding-top: 0
+
+.wrapp
+  min-height: 400px
+  width: 100%
+
+.our-story
+  width: 875px
+  margin: 70px auto
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 235px
+    height: 230px
+    margin-right: 100px
+
+.style-h3
+    color: #413d4b
+    font-family: 'Hammersmith One', sans-serif
+    font-size: 22px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.1px
+    margin-bottom: 30px
+.style-p
+  opacity: 0.75
+  color: #413d4b
+  font-family: Roboto sans-serif
+  font-size: 14px
+  font-weight: 300
+  line-height: 22px
+  letter-spacing: 0.42px
+  margin-bottom: 30px
+.style-h2
+  color: #ffffff
+  font-size: 32px
+  font-weight: 400
+  letter-spacing: 0.32px
+  font-family: Playfair Display serif
+.style-sentence
+  font-family: Roboto - Black sans-serif
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 0.8px
+  color: #ffffff
+
+.watch-story
+  width: 100%
+  max-height: 550px
+  &-img
+    width: 100%
+    height: 550px
+
+.section-expertise
+  padding: 70px
+  text-align: center
+  justify-content: center
+  ul
+    display: flex
+    flex-wrap: wrap
+    li
+      width: 250px
+      min-height: 180px
+      padding: 30px
+      h4
+        padding: 25px 0
+.border-r
+  border-right: solid 1px #000000
+.border-b
+  border-bottom: solid 1px #000000
+
+.meet-our-img
+  width: 100%
+  max-height: 710px
+
+.meet-our
+  width: 100%
+  max-height: 570px
+  div
+    text-align: center
+    h3
+      color: #ffffff
+      font-family: Playfair Display sans-serif
+      font-size: 22px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 1.1px
+    p
+      color: #f9f9f9
+      font-family: Playfair Display sans-serif
+      font-size: 14px
+      font-weight: 400
+      letter-spacing: 1.05px
+    ul
+      display: flex
+      li
+        width: 220px
+        margin: 0 10px
+        img
+          width: 100%
+          height: 230px
+        div
+          border: 1px solid #e1e1e1
+          margin-top: -5px
+          h4
+            font-family: Roboto-Black sans-serif
+            font-size: 14px
+            text-transform: uppercase
+            font-weight: 400
+            color: #ffffff
+            letter-spacing: 0.7px
+            padding-top: 20px
+          p
+            opacity: 0.7
+            color: #fafafa
+            font-family: Roboto sans-serif
+            font-size: 13px
+            font-weight: 300
+            text-transform: uppercase
+            padding-bottom: 30px
+
+.padding-t-b
+  padding: 70px 0
+.padding-b
+  padding-bottom: 70px
+
+.our-works-section
+  height: auto
+.our-works-conteiner
+  width: 930px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 auto
+.our-works-story
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  li
+    margin: -5px
+
+.quote-conteiner
+  width: 770px
+  height: auto
+  text-align: center
+.quote-style
+  opacity: 0.85
+  color: #ffffff
+  font-family: Playfair Display sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 26px
+  letter-spacing: 0.4px
+  padding: 45px 0
+.quote-autor-style
+  color: #ffffff
+  font-family: Roboto - Black Serif sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 22px
+  text-transform: uppercase
+  letter-spacing: 0.7px
+.quote-autor-prof
+  opacity: 0.7
+  color: #ffffff
+  font-family: Roboto Serif sans-serif
+  font-size: 13px
+  font-weight: 300
+  line-height: 22px
+  text-transform: uppercase
+  padding: 15px 0 45px 0
