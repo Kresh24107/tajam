@@ -1,153 +1,27 @@
 body
   margin: 0
+@import "variables"
+@import "welcome1-section"
+@import "mixins"
+@import "fonts"
 
-.main-logo
-  color: #00e0d0
-  font-family: Roboto - Thin sans-serif
-  font-size: 30px
-  margin-left: 10px
-
-.wraper
-  width: 100%
-  min-height: 100vh
-
-.main-nav-li
-  margin-left: 30px
-  color: #ffffff
-  font-family: Roboto - Black sans-serif
-  &:hover
-    color: #00e0d0
-
-.font-no-black
-  font-family: Playfair Display - blod sans-serif
-
-.align-center
-  align-content: center
-  justify-content: center
-  align-items: center
-
-.block
-  width: 100%
-  height: 550px
-  display: flex
-  flex-flow: column
-
-
-.flexible-in-a-row
-  display: flex
-  wrap-option: no wrap
-  align-items: center
-
-.text-uppercase
-  text-transform: uppercase
-
-.conteiner
-  width: 940px
-  height: 100%
-  margin: 0 auto
-  font-family: Roboto sans sans-serif
-  .greeting
-    width: 770px
-    margin: 160px auto
-    text-align: center
-    color: white
-    margin-bottom: 50px
-    .hello
-      padding-bottom: 20px
-      border-bottom: 1px solid #00e0d0
-      margin-bottom: 30px
-      font-size: 32px
-
-.marg-center
-  margin: auto auto
-  text-align: center
-.bottom
-  margin-bottom: 70px
-
-.main-header
-  display: flex
-  align-items: center
-  justify-content: space-between
-  height: 50px
-  padding-top: 15px
-
-.button
-  color: #00e0d0
-  border: 1px solid #00e0d0
-  text-transform: uppercase
-  margin: 30px auto
-  min-width: 120px
-  text-align: center
-  justify-content: center
-  background-color: transparent
-  padding: 20px
-  font-family: Hammersmith One sans serif
-  font-size: 16px
-  &-reset
-    margin: 0
-
-.class1
-  position: relative
-  margin: 0 auto
-
-.fon-img
-  position: absolute
-  width: 100%
-  height: 100%
-  padding-top: 0
-
-.wrapp
-  min-height: 400px
-  width: 100%
-
-.our-story
-  width: 875px
-  margin: 70px auto
-  display: flex
-  align-items: center
-  justify-content: center
-  img
-    width: 235px
-    height: 230px
-    margin-right: 100px
-
-.style-h3
-    color: #413d4b
-    font-family: 'Hammersmith One', sans-serif
-    font-size: 22px
-    font-weight: 700
-    text-transform: uppercase
-    letter-spacing: 1.1px
-    margin-bottom: 30px
-.style-p
-  opacity: 0.75
-  color: #413d4b
-  font-family: Roboto sans-serif
-  font-size: 14px
-  font-weight: 300
-  line-height: 22px
-  letter-spacing: 0.42px
-  margin-bottom: 30px
-.style-h2
-  color: #ffffff
-  font-size: 32px
-  font-weight: 400
-  letter-spacing: 0.32px
-  font-family: Playfair Display serif
-.style-sentence
-  font-family: Roboto - Black sans-serif
-  font-size: 16px
-  font-weight: 400
-  text-transform: uppercase
-  letter-spacing: 0.8px
-  color: #ffffff
 
 .watch-story
   width: 100%
   max-height: 550px
-  &-img
+  background-image: url("../img-2/put-your-image-here.jpg")
+  position: relative
+  z-index: 2
+  &::before
+    position: absolute
+    content: ''
     width: 100%
-    height: 550px
+    height: 100%
+    top: 0
+    left: 0
+    background: $my-gradient
+    z-index: 1
+    opacity: 0.7
 
 .section-expertise
   padding: 70px
@@ -166,76 +40,94 @@ body
   border-right: solid 1px #000000
 .border-b
   border-bottom: solid 1px #000000
+.sect
+  width: 500px
+  height: 500px
+  background: #456
 
-.meet-our-img
-  width: 100%
-  max-height: 710px
+.style-sentence
+  margin-top: 35px
 
-.meet-our
+
+.meet-our-bg
+
   width: 100%
   max-height: 570px
-  div
-    text-align: center
-    h3
-      color: #ffffff
-      font-family: Playfair Display sans-serif
-      font-size: 22px
-      font-weight: 700
-      text-transform: uppercase
-      letter-spacing: 1.1px
-    p
-      color: #f9f9f9
-      font-family: Playfair Display sans-serif
-      font-size: 14px
-      font-weight: 400
-      letter-spacing: 1.05px
-    ul
-      display: flex
-      li
-        width: 220px
-        margin: 0 10px
-        img
-          width: 100%
-          height: 230px
-        div
-          border: 1px solid #e1e1e1
-          margin-top: -5px
-          h4
-            font-family: Roboto-Black sans-serif
-            font-size: 14px
-            text-transform: uppercase
-            font-weight: 400
-            color: #ffffff
-            letter-spacing: 0.7px
-            padding-top: 20px
-          p
-            opacity: 0.7
-            color: #fafafa
-            font-family: Roboto sans-serif
-            font-size: 13px
-            font-weight: 300
-            text-transform: uppercase
-            padding-bottom: 30px
+  margin-bottom: 500px
+  //background: url("../img-2/put-your-image-here23.jpg")
+  background-size: cover
 
 .padding-t-b
   padding: 70px 0
 .padding-b
   padding-bottom: 70px
 
+
+
+
+
 .our-works-section
-  height: auto
+  width: 100%
+  height: 100%
+  background-image: url(../img-2/put-your-image-here23.jpg)
+  position: relative
+  color: $me-white
+  z-index: 2
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: $my-gradient
+    z-index: 1
+    opacity: 0.7
+    overflow: hidden
+
+.align-center-heder
+  text-align: center
+.block-bord
+  border: solid 1px $me-white
+  margin-top: -5px
+  padding-top: 20px
+  padding-bottom: 30px
+  width: 218px
+.text-white
+  color: $me-white
+
+
 .our-works-conteiner
-  width: 930px
   display: flex
   justify-content: space-between
   align-items: center
-  margin: 0 auto
 .our-works-story
+
+.see-aii
+  position: relative
+  &::after
+    content: ''
+    right: 10px
+    background-image: url(../img-2/right154.png)
+
+.meet-our-block
   display: flex
-  flex-wrap: wrap
   justify-content: center
-  li
-    margin: -5px
+
+.item-wid
+  margin: 10px
+  width: 220px
+  img
+    width: 100%
+
+
+
+
+
+
+
+
+
 
 .quote-conteiner
   width: 770px
@@ -267,3 +159,5 @@ body
   line-height: 22px
   text-transform: uppercase
   padding: 15px 0 45px 0
+
+

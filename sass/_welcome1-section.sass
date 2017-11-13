@@ -1,0 +1,155 @@
+
+.welcome-section
+  position: relative
+  z-index: 2
+  &::before
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: $my-gradient
+    z-index: 1
+    opacity: 0.7
+
+.main-logo
+  color: #00e0d0
+  font-family: Roboto - Thin sans-serif
+  font-size: 30px
+  margin-left: 10px
+
+.wraper
+  width: 100%
+  min-height: 100vh
+
+
+.main-nav-li
+  margin-left: 30px
+  color: #ffffff
+  font-family: Roboto - Black sans-serif
+  &:hover
+    color: #00e0d0
+
+.font-no-black
+  font-family: Playfair Display - blod sans-serif
+
+.align-center
+  align-content: center
+  justify-content: center
+  align-items: center
+
+.block
+  width: 100%
+  height: 550px
+  display: flex
+  flex-flow: column
+
+
+.flexible-in-a-row
+  display: flex
+  wrap-option: no wrap
+  align-items: center
+
+.text-uppercase
+  text-transform: uppercase
+
+.conteiner
+  width: 940px
+  height: 100%
+  margin: 0 auto
+  font-family: Roboto sans sans-serif
+  .greeting
+    width: 770px
+    margin: 160px auto
+    text-align: center
+    color: white
+    margin-bottom: 50px
+    .hello
+      padding-bottom: 20px
+      margin-bottom: 30px
+      font-size: 32px
+
+.section-title
+  position: relative
+  &::after
+    position: absolute
+    content: ''
+    bottom: 0
+    margin-left: -25px
+    width: 50px
+    height: 1px
+    background: $my-blue
+  &-top::after
+    bottom: 45px
+    position: absolute
+    content: ''
+    opacity: 0.2;
+    margin-left: -25px
+    width: 50px
+    height: 1px
+    background: #000000
+.marg-center
+  margin: auto auto
+  text-align: center
+.bottom
+  margin-bottom: 70px
+
+.position-bottom
+  position: absolute
+  bottom 0
+  left: 50%
+  margin-bottom: 70px
+  justify-content: center
+  z-index: 2
+  img
+    margin: -50%
+
+.main-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 50px
+  padding-top: 15px
+
+.button
+  color: $my-blue
+  border: 1px solid $my-blue
+  text-transform: uppercase
+  margin: 30px auto
+  min-width: 120px
+  text-align: center
+  justify-content: center
+  background-color: transparent
+  padding: 15px
+  font-family: Hammersmith One sans serif
+  font-size: 16px
+  &-reset
+    margin: 0
+
+.class1
+  position: relative
+  margin: 0 auto
+  z-index: 2
+
+.fon-img
+  position: absolute
+  width: 100%
+  height: 100%
+  padding-top: 0
+
+.wrapp
+  min-height: 400px
+  width: 100%
+
+.our-story
+  width: 875px
+  margin: 70px auto
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 235px
+    height: 230px
+    margin-right: 100px
+
